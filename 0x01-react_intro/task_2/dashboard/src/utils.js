@@ -7,3 +7,7 @@ export const getFooterCopy = (isIndex) => {
   isIndex ? arg = 'Holberton School' : arg = 'Holberton School main dashboard'
   return arg;
 }
+
+export const getLatestNotification = () => {
+  return '<strong>Urgent requirement</strong> - complete by EOD';
+}
