@@ -20,6 +20,7 @@ module.exports = {
     new HtmlWebpackPlugin(),
     new CleanWebpackPlugin(),
   ],
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
