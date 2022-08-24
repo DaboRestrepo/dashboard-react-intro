@@ -13,7 +13,7 @@ const updateCounter = () => {
     count++;
     $('#count').html(`${count} clicks on the button`)
   });
-}
+};
 
 _.debounce(updateCounter, 300);
 updateCounter();
