@@ -22,6 +22,7 @@ export default class App extends Component {
   }
   handleLogout(event) {
     if(event.ctrlkey && event.key === 'h') {
+      event.preventDefault();
       alert('Logging you out'); /* Alert of logging out */
       this.props.logOut(); /* Call the logout function */
     }
