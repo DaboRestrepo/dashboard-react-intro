@@ -1,8 +1,15 @@
 import React from "react";
 import { shallow } from 'enzyme';
 import BodySection from "./BodySection";
+import { StyleSheetTestUtils } from 'aphrodite';
 
 describe('<BodySection />', () => {
+  beforeAll(() => {
+    StyleSheetTestUtils.suppressStyleInjection();
+  });
+  afterAll(() => {
+    StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+  });
   it('Renders the children and the h2', () => {
     const wrapper = shallow((
       <BodySection title="test title">

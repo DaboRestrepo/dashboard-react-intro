@@ -2,8 +2,15 @@ import React from "react";
 import { shallow } from 'enzyme';
 import CourseList from "./CourseList";
 import CourseListRow from './CourseListRow';
+import { StyleSheetTestUtils } from 'aphrodite';
 
 describe('<CourseList />', () => {
+  beforeAll(() => {
+    StyleSheetTestUtils.suppressStyleInjection();
+  });
+  afterAll(() => {
+    StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+  });
   const listCourses = [
     { id: 1, name: 'ES6', credit: 60 },
     { id: 2, name: 'Webpack', credit: 20 },
