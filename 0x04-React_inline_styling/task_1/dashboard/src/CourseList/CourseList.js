@@ -21,7 +21,7 @@ export default function CourseList({listCourses}) {
   );
 }
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
   list: {
     margin: 40,
     border: '1px solid grey',
