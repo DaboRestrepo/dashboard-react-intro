@@ -11,5 +11,5 @@ export const map = Map({
 });
 
 export const map2 = map.withMutations((list) => {
-  list.set('2', 'Benjamin').set('4', 'Oliver');
+  list.set(2, 'Benjamin').set(4, 'Oliver');
 });
