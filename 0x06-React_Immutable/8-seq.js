@@ -2,10 +2,7 @@ import Immutable from 'immutable';
 
 const { Seq } = Immutable;
 
-const upperCase = (str) => {
-  const str1 = str.charAt(0).toUpperCase() + str.slice(1);
-  return str1;
-};
+const upperCase = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
 export default function printBestStudents(object) {
   const bestScore = Seq(object)
